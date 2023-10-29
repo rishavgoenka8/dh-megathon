@@ -1,6 +1,9 @@
 ## CandidateScope: Automated Profiling and Cultural Fit Analysis
 ## Team: DH
 
+## Presentation
+An overview of our presentation's key points and highlights:<a href="https://docs.google.com/presentation/d/16UfgbIRd2ZKFoP5PyvyKgu0Xo_pkp7nxvJ_S2yB_01o/edit?usp=sharing"> Presentation </a>
+
 ## Setup Instructions
 Clone the repository
 
