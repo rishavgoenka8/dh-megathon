@@ -84,7 +84,6 @@ def create_applicant(request):
             analysis2 = _openAI_culture(post_info)
             print(analysis1)
             print(analysis2)
-            print(analysis1)
             # Handle file upload
             if 'psychometric_file' in request.FILES:
                 file = request.FILES['psychometric_file']

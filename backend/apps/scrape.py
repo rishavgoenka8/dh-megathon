@@ -56,9 +56,9 @@ def getSoup(url, driver, flag=0, ctr=0):
     driver.get(url)
     try:
         if flag == 0:
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "display-flex ph5 pv3")))
+            WebDriverWait(driver, 8).until(EC.presence_of_element_located((By.CLASS_NAME, "display-flex ph5 pv3")))
         else:
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "pvs-list__paged-list-item artdeco-list__item pvs-list__item--line-separated pvs-list__item--one-column")))
+            WebDriverWait(driver, 8).until(EC.presence_of_element_located((By.CLASS_NAME, "pvs-list__paged-list-item artdeco-list__item pvs-list__item--line-separated pvs-list__item--one-column")))
     except Exception as e:
         print(e)
         pass
@@ -122,6 +122,7 @@ def postProcess(array, key):
 
 def scrape(linkedin_url):
 	options = webdriver.ChromeOptions()
+	options.add_argument('--headless')
 	driver = webdriver.Chrome(options=options)
 	
 	email = os.environ.get('LINKEDIN_EMAIL')

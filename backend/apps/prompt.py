@@ -46,6 +46,7 @@ def _openAI_skills(data):
     
 
 def _openAI_culture(data):
+    print("hello ")
     posts = data['posts']
     prompt = f""" 
     We want to judge a person's behaviour and nature based on his/her linkedin posts. I'll give you all of the posts made by the applicant and I want you to return the behavioural aspects of that person. You can give output using Myers-Briggs Type Indicator Test. Keep the result very concise upto 3-4 lines. The posts are as follows: {posts}. 
